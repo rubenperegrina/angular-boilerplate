@@ -1,0 +1,39 @@
+@import "../styles/variables.scss";
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat-Regular.otf) format("opentype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat-Medium.otf) format("opentype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat-SemiBold.otf) format("opentype");
+    font-weight: 600;
+}
+
+@mixin save-button{
+    background-color: $primary-color;
+    color: $black-color;
+    font-weight: 500;
+    box-shadow: 1px 6px 4px #888888;
+}
+    
+@mixin cancel-button{
+    background-color: $backgound-color;
+    color: $black-color;
+    font-weight: 500;
+    box-shadow: 1px 6px 4px #888888;
+}
+
+@mixin save-button-hover {
+    background: darken($primary-color, 5.5%);
+}
+
+@mixin cancel-button-hover {
+    background: darken($backgound-color, 5.5%);
+}

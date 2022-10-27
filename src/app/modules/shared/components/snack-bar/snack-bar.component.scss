@@ -1,0 +1,21 @@
+@import "../../../../../styles/variables.scss";
+@import "../../../../../styles/project-styles.scss";
+
+.snack{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    .data {
+        font-weight: 500;
+    }
+}
+
+::ng-deep .snack-success{
+    background-color:$primary-color;
+    color: $black-color;
+}
+
+::ng-deep .snack-error{
+    background-color:$red-color;
+    color: $black-color;
+}
